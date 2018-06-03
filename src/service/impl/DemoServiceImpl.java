@@ -5,10 +5,11 @@ import model.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import service.IDemoService;
-
+import javax.transaction.Transactional;
 import java.io.Serializable;
 
-@Service(value = "demoService")
+@Transactional
+@Service("demoService")
 public class DemoServiceImpl  implements  IDemoService{
     @Autowired
     private IDemoDao demoDao;

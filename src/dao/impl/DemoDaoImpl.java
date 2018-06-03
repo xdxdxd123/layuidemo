@@ -9,7 +9,7 @@ import service.IDemoService;
 
 import java.io.Serializable;
 
-@Repository(value = "demoDao")
+@Repository("demoDao")
 public class DemoDaoImpl implements IDemoDao
 {
     @Autowired
